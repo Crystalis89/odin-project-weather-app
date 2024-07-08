@@ -1,0 +1,195 @@
+div {
+    opacity: 82%;
+
+}
+
+body {
+
+background-image: url(images/the-four-seasons.jpg);
+background-size: 100%;
+
+}
+
+p {
+    font-size: x-large;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    background-color: wheat;
+    opacity: 90%;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+}
+
+header img {
+height: 100px;
+}
+
+#navigatelink {
+    text-decoration: none;
+    margin-right: 10rem;
+}
+
+
+#locationbar {
+    border-radius: 5px;
+    background-color: white;
+    width: 30rem;
+    display: grid;
+    grid-template-areas: 
+    
+    "search search  ."
+    "search search location"
+    "search search updated";
+
+    margin-left: 40rem;
+
+}
+.locationname {
+    grid-area: search;
+}
+
+.locationcoords {
+    grid-area: location;
+}
+
+#lastupdatediv {
+    grid-area: updated;
+}
+
+#currentwarningsdiv {
+    background-color: red;
+    opacity: 90%;
+}
+
+#currentstats {
+    background-color: white;
+    display: grid;
+grid-template-areas: 
+    "title title title title"    
+    "condition temp wind dewpoint "
+    "humidity pressure precipit uv";
+}
+#currentheader {
+    grid-area: title;
+    margin-left: 45rem;
+}
+
+#currentcondition {grid-area: condition;}
+
+#currenttemp {grid-area: temp;}
+
+#currentwind {grid-area: wind;}
+
+#currentdewpoint {grid-area: dewpoint;}
+
+#currenthumidity {grid-area: humidity;}
+
+#currentpressure {grid-area: pressure;}
+
+#currentprecipit {grid-area: precipit;}
+
+#currentuv {grid-area: uv;}
+
+#astronomydiv {
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: 
+    "header header header header"
+    "sunstats sunstats moonstats moonstats" ;
+}
+
+#astroheader {
+    grid-area: header;
+}
+
+#sunstats {
+    grid-area: sunstats;
+    margin-right: 10rem ;
+    display: grid;  
+    grid-template-areas: 
+        "header header"
+        "sunrise sunset";
+    }
+    
+    #sunstatsheader {
+        grid-area: header;
+    }
+    
+    
+    #sunrise {grid-area: sunrise;
+        margin-right: 10px;
+    }
+    
+    #sunset {grid-area: sunset;
+        margin-right: 10px;
+    }
+    
+
+#moonstats {
+grid-area: moonstats;
+justify-items: end;
+display: grid;
+grid-template-areas: 
+    "header header header"
+    "moonrise moonset phase";
+
+}
+
+#moonstatsheader {
+    grid-area: header;
+    margin-right: 50%;
+}
+
+#moonphase {grid-area: phase;
+margin-right: 10px;
+}
+
+#moonrise {grid-area: moonrise;
+
+    margin-right: 10px;
+}
+
+#moonset {grid-area: moonset;
+    margin-right: 10px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: wheat;
+    opacity: 90%;
+    height: 2rem;
+    width: 99%;
+    position: fixed;
+    bottom: 0;
+}
+
+#forecast {
+background-color: white;
+opacity: 90%;
+}
+
+#hourly {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: solid black;
+    border-radius: 3rem;
+    background-color: white;
+    opacity: 90%;
+}
+
+#hourly p {
+    border: solid black;
+    border-radius: 0.25rem;
+  
+}
