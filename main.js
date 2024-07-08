@@ -112,10 +112,10 @@ async function fetchLocationData() {
     if (locinput.value !== '') {
 
 
-        createlink  = 'http://api.weatherapi.com/v1/search.json?key=521ae33e652e47ce82512305240107&q=' + locinput.value  
+        createlink  = 'https://api.weatherapi.com/v1/search.json?key=521ae33e652e47ce82512305240107&q=' + locinput.value  
 
     } else {
-        createlink  = 'http://api.weatherapi.com/v1/search.json?key=521ae33e652e47ce82512305240107&q=12345' 
+        createlink  = 'https://api.weatherapi.com/v1/search.json?key=521ae33e652e47ce82512305240107&q=12345' 
     }
     
     const response = await fetch(createlink, {mode: 'cors'});
@@ -133,9 +133,9 @@ async function fetchCurrentWeather() {
     let createlink
 
    if (locationcoordinates !== '') {
-        createlink = 'http://api.weatherapi.com/v1/forecast.json?key=521ae33e652e47ce82512305240107&q=' + locationcoordinates + '&days=3&aqi=yes&alerts=yes'
+        createlink = 'https://api.weatherapi.com/v1/forecast.json?key=521ae33e652e47ce82512305240107&q=' + locationcoordinates + '&days=3&aqi=yes&alerts=yes'
     } else {
-        createlink = 'http://api.weatherapi.com/v1/forecast.json?key=521ae33e652e47ce82512305240107&q=12345&days=3&aqi=yes&alerts=yes'       
+        createlink = 'https://api.weatherapi.com/v1/forecast.json?key=521ae33e652e47ce82512305240107&q=12345&days=3&aqi=yes&alerts=yes'       
     }
 
     const response = await fetch(createlink, {mode: 'cors'});
